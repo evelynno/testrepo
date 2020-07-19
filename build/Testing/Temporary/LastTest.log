@@ -1,0 +1,58 @@
+Start testing: Jul 16 21:36 MDT
+----------------------------------------------------------
+1/1 Testing: check
+1/1 Test: check
+Command: "/home/evelynn/testing_test/build/tests"
+Directory: /home/evelynn/testing_test/build
+"check" start time: Jul 16 21:36 MDT
+Output:
+----------------------------------------------------------
+[==========] Running 5 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from mockTest
+[ RUN      ] mockTest.testIf
+inside public_function
+hit this if case
+inside public_function
+hit this if case
+inside public_function
+hit this else case
+[       OK ] mockTest.testIf (0 ms)
+[----------] 1 test from mockTest (0 ms total)
+
+[----------] 3 tests from mainTests
+[ RUN      ] mainTests.testCreateCx
+[       OK ] mainTests.testCreateCx (0 ms)
+[ RUN      ] mainTests.testInsideFunction
+[       OK ] mainTests.testInsideFunction (0 ms)
+[ RUN      ] mainTests.testOutsideFunction
+/home/evelynn/testing_test/test/gtest.cpp:47: Failure
+Expected equality of these values:
+  0
+  outside_function()
+    Which is: 1
+[  FAILED  ] mainTests.testOutsideFunction (0 ms)
+[----------] 3 tests from mainTests (0 ms total)
+
+[----------] 1 test from rapidcheckTest
+[ RUN      ] rapidcheckTest.add_two_ints
+Using configuration: seed=9317686802342791243
+[       OK ] rapidcheckTest.add_two_ints (1 ms)
+[----------] 1 test from rapidcheckTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 3 test suites ran. (1 ms total)
+[  PASSED  ] 4 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] mainTests.testOutsideFunction
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"check" end time: Jul 16 21:36 MDT
+"check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 16 21:36 MDT

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/tests.dir/test/gtest.cpp.o  -o tests  -Wl,-rpath,/home/evelynn/testing_test/build libtesting_test.so -lgtest -lpthread -lgmock -lpthread -lgtest -lpthread -lgmock /usr/local/lib/librapidcheck.a 

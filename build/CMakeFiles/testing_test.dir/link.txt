@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libtesting_test.so -o libtesting_test.so CMakeFiles/testing_test.dir/src/main.cpp.o 
